@@ -4,6 +4,9 @@ import DescriptionSection from "@/components/content/Description";
 import Background from "@/components/content/Background";
 import CompanyValues from "@/components/content/CompanyValues";
 import ProductCategory from "@/components/content/ProductCategory";
+import ProductCatalog from "@/components/content/ProductCatalog";
+import CompanyStats from "@/components/content/CompanyStats";
+import CardDemo from "@/components/content/CardSection";
 
 export default function Home() {
   return (
@@ -13,8 +16,11 @@ export default function Home() {
       <Hero />
       <DescriptionSection />
       <Background />
-      <CompanyValues/>
-      <ProductCategory/>
+      <CompanyValues />
+      <ProductCategory />
+      <ProductCatalog />
+      <CompanyStats />
+      <CardDemo />
       {/* Add more components or content here */}
     </div>
   );
