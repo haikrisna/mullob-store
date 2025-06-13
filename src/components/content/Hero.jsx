@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
           </div>
           <img
-            src="https://shadcnblocks.com/images/block/placeholder-1.svg"
+            src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png"
             alt="placeholder hero"
             className="h-full w-full object-cover"
           />

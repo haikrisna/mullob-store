@@ -1,7 +1,6 @@
 "use client";
 
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
-
 import {
   Accordion,
   AccordionContent,
@@ -28,10 +27,10 @@ import { useState } from "react";
 
 const Navbar = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://shadcnblocks.com/images/block/logos/shadcnblockscom-icon.svg",
+    url: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
+    src: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "MullobStore.com",
   },
   menu = [
     { title: "Home", url: "#" },

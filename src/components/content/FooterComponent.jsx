@@ -3,12 +3,12 @@ import { Container } from "../layout/container";
 
 const Footer2 = ({
   logo = {
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/block-1.svg",
-    alt: "blocks for shadcn/ui",
-    title: "Shadcnblocks.com",
-    url: "https://www.shadcnblocks.com",
+    src: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
+    alt: "Mullob Logo",
+    title: "Mullob.com",
+    url: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
   },
-  tagline = "Components made easy.",
+  tagline = "Product made easy.",
   menuItems = [
     {
       title: "Product",
@@ -49,7 +49,7 @@ const Footer2 = ({
       ],
     },
   ],
-  copyright = "© 2024 Shadcnblocks.com. All rights reserved.",
+  copyright = "© 2025 Mullob.com. All rights reserved.",
   bottomLinks = [
     { text: "Terms and Conditions", url: "#" },
     { text: "Privacy Policy", url: "#" },
