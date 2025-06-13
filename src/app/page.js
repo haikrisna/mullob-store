@@ -7,6 +7,8 @@ import ProductCategory from "@/components/content/ProductCategory";
 import ProductCatalog from "@/components/content/ProductCatalog";
 import CompanyStats from "@/components/content/CompanyStats";
 import CardDemo from "@/components/content/CardSection";
+import CircularStats from "@/components/content/NewCompanyStats";
+import { Footer2 } from "@/components/content/FooterComponent";
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
       <CompanyValues />
       <ProductCategory />
       <ProductCatalog />
+      <CircularStats />
       <CompanyStats />
       <CardDemo />
+      <Footer2 />
       {/* Add more components or content here */}
     </div>
   );
