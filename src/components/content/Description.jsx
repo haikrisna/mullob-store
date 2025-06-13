@@ -3,7 +3,7 @@ import { Container } from "@/components/layout/container";
 
 const DescriptionSection = () => {
   return (
-    <section className="py-46">
+    <section className=" py-58">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Text Content */}
