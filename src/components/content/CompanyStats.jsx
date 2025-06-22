@@ -211,8 +211,8 @@ export default function CompanyStats() {
   const statsData = [
     {
       title: "Total Subscribers",
-      value: "71",
-      previousValue: "30",
+      value: "15",
+      previousValue: "7",
     },
     {
       title: "Avg. Open Rate",
@@ -222,9 +222,9 @@ export default function CompanyStats() {
       isDecimal: true,
     },
     {
-      title: "Avg. Click Rate",
-      value: "24.57",
-      previousValue: "28.62",
+      title: "Avg. View",
+      value: "26.08",
+      previousValue: "22.03",
       suffix: "%",
       isDecimal: true,
     },

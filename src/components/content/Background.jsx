@@ -35,7 +35,7 @@ const Background = () => {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-start sm:justify-center">
+          <div className="flex justify-center  sm: items-center">
             <div className=" flex-col items-center">
               <h1 className="text-4xl font-extrabold text-black mb-2">
                 Mission
