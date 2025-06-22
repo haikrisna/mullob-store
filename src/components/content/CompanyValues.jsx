@@ -12,26 +12,26 @@ const CompanyValues = () => {
           <div className="flex flex-col items-center text-center p-8 lg:items-start lg:text-left">
             <h2 className="text-2xl lg:text-4xl font-bold text-black mb-2 flex items-center gap-2 opacity-60">
               <CheckSquareIcon className="w-6 h-6" />
-              Introduci Mullob Store
+              High-quality product
             </h2>
             <h2 className="text-2xl lg:text-4xl font-extrabold text-black mb-2 flex items-center gap-2 opacity-75">
               <CheckSquareIcon className="w-6 h-6" />
-              Introduci Mullob Store
+              Environmentally friendly
             </h2>
             <h2 className="text-2xl lg:text-4xl font-black text-black mb-2 flex items-center gap-2 opacity-90">
-              <CheckSquareIcon className="w-6 h-6" />
-              Introduci Mullob Store
+              <CheckSquareIcon className="w-8 h-8" />
+              Available locally and internationally
             </h2>
             <h2 className="text-2xl lg:text-4xl font-bold text-black mb-2 flex items-center gap-2 opacity-100">
               <CheckSquareIcon className="w-6 h-6" />
-              Introduci Mullob Store
+              Trusted by consumers
             </h2>
           </div>
 
           {/* Title (Right) */}
           <div className="flex flex-col justify-center items-center lg:items-end text-center lg:text-right">
             <h2 className="text-3xl lg:text-4xl font-extrabold text-black mb-2">
-              Company
+              Store
             </h2>
             <h2 className="text-3xl lg:text-4xl font-extrabold text-black">
               Values

@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { CertificateIcon } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -19,10 +20,12 @@ const Hero = () => {
               consequatur. Explicabo.
             </p>
             <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
-              <Button>
-                Let's Shop
-                <ArrowRight className="size-4" />
-              </Button>
+              <Link href="https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0">
+                <Button>
+                  Let's Shop
+                  <ArrowRight className="size-4" />
+                </Button>
+              </Link>
               <Button variant="outline">
                 Certified <CertificateIcon className=" w-4 h-4" />
               </Button>

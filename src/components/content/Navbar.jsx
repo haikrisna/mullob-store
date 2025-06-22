@@ -105,7 +105,7 @@ const Navbar = ({
     },
   ],
   auth = {
-    signup: { title: "Contact Now", url: "#" },
+    signup: { title: "Contact Now", url: "https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0#" },
   },
 }) => {
   return (
