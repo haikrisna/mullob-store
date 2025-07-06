@@ -1,7 +1,14 @@
-"use client"
-import { Card, CardContent } from "@/components/ui/card"
+"use client";
+import { Card, CardContent } from "@/components/ui/card";
 
-const PartnerCard = ({ image, title, subtitle, description, imageAlt = "Partner image", className = "" }) => {
+const PartnerCard = ({
+  image,
+  title,
+  subtitle,
+  description,
+  imageAlt = "Partner image",
+  className = "",
+}) => {
   return (
     <Card
       className={`overflow-hidden bg-white border-gray-200 hover:shadow-md transition-shadow flex-shrink-0 w-80 ${className}`}
@@ -12,7 +19,11 @@ const PartnerCard = ({ image, title, subtitle, description, imageAlt = "Partner 
           <div className="flex-shrink-0">
             <div className="w-12 h-12 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
               {image ? (
-                <img src={image || "/placeholder.svg"} alt={imageAlt} className="w-full h-full object-cover" />
+                <img
+                  src={image || "/placeholder.svg"}
+                  alt={imageAlt}
+                  className="w-full h-full object-cover"
+                />
               ) : (
                 <div className="w-6 h-6 bg-blue-500 rounded-md"></div>
               )}
@@ -22,60 +33,76 @@ const PartnerCard = ({ image, title, subtitle, description, imageAlt = "Partner 
           <div className="flex-1 min-w-0">
             <div className="space-y-1">
               {/* Main Title */}
-              <h3 className="text-base font-semibold text-gray-900 truncate">{title || "Partner Name"}</h3>
+              <h3 className="text-base font-semibold text-gray-900 truncate">
+                {title || "Partner Name"}
+              </h3>
               {/* Subtitle */}
-              {subtitle && <p className="text-xs text-gray-600 truncate">{subtitle}</p>}
+              {subtitle && (
+                <p className="text-xs text-gray-600 truncate">{subtitle}</p>
+              )}
               {/* Description */}
-              {description && <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">{description}</p>}
+              {description && (
+                <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">
+                  {description}
+                </p>
+              )}
             </div>
           </div>
         </div>
       </CardContent>
     </Card>
-  )
-}
+  );
+};
 
 export default function StorePartnerSection() {
   const partnersData = [
     {
       title: "Toko Organik Sehat",
       subtitle: "Organic Store • Partner since 2023",
-      description: "Menyediakan produk organik berkualitas tinggi untuk kesehatan keluarga Indonesia.",
+      description:
+        "Menyediakan produk organik berkualitas tinggi untuk kesehatan keluarga Indonesia.",
     },
     {
       title: "Warung Tradisional Nusantara",
       subtitle: "Traditional Store • Partner since 2022",
-      description: "Menghadirkan cita rasa tradisional Indonesia dengan bahan-bahan pilihan terbaik.",
+      description:
+        "Menghadirkan cita rasa tradisional Indonesia dengan bahan-bahan pilihan terbaik.",
     },
     {
       title: "Koperasi Tani Maju",
       subtitle: "Farmer Cooperative • Partner since 2024",
-      description: "Mendukung petani lokal dengan distribusi hasil pertanian segar dan berkualitas.",
+      description:
+        "Mendukung petani lokal dengan distribusi hasil pertanian segar dan berkualitas.",
     },
     {
       title: "Pasar Modern Hijau",
       subtitle: "Green Market • Partner since 2023",
-      description: "Marketplace ramah lingkungan yang mengutamakan produk berkelanjutan.",
+      description:
+        "Marketplace ramah lingkungan yang mengutamakan produk berkelanjutan.",
     },
     {
       title: "Toko Rempah Nusantara",
       subtitle: "Spice Store • Partner since 2022",
-      description: "Spesialis rempah-rempah asli Indonesia dengan kualitas ekspor terbaik.",
+      description:
+        "Spesialis rempah-rempah asli Indonesia dengan kualitas ekspor terbaik.",
     },
     {
       title: "Kedai Kopi Lokal",
       subtitle: "Coffee Shop • Partner since 2024",
-      description: "Menghadirkan kopi specialty dari berbagai daerah di Indonesia.",
+      description:
+        "Menghadirkan kopi specialty dari berbagai daerah di Indonesia.",
     },
-  ]
+  ];
 
-  const shouldAnimate = partnersData.length > 3
+  const shouldAnimate = partnersData.length > 3;
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12 bg-transparent">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Store Partner</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">
+            Store Partner
+          </h2>
           <p className="text-gray-600">Partners who work with us</p>
         </div>
 
@@ -118,15 +145,15 @@ export default function StorePartnerSection() {
             transform: translateX(-50%);
           }
         }
-        
+
         .animate-scroll {
           animation: scroll 30s linear infinite;
         }
-        
+
         .animate-scroll:hover {
           animation-play-state: paused;
         }
       `}</style>
     </section>
-  )
+  );
 }
