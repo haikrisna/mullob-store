@@ -9,6 +9,7 @@ import CompanyStats from "@/components/content/CompanyStats";
 import CardDemo from "@/components/content/CardSection";
 import CircularStats from "@/components/content/NewCompanyStats";
 import { Footer2 } from "@/components/content/FooterComponent";
+import ContactWithMap from "@/components/content/contact";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <CircularStats />
       <CompanyStats />
       <CardDemo />
+      <ContactWithMap />
       <Footer2 />
       {/* Add more components or content here */}
     </div>
