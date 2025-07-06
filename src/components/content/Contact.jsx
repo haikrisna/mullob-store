@@ -5,6 +5,7 @@ import {
   TiktokLogoIcon,
   WhatsappLogoIcon,
 } from "@phosphor-icons/react";
+// tst deploy
 
 export default function ContactWithMap() {
   const socialMedia = [
@@ -26,7 +27,7 @@ export default function ContactWithMap() {
   ];
 
   return (
-    <section className="py-0">
+    <section className="py-0 bg-transparent">
       <div className="max-w-7xl mx-auto">
         {/* Map Section */}
         <div className="relative h-96 overflow-hidden">
