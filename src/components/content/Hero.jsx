@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { CertificateIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
-import LogoMullob from "../src/mullob_logo.png";
+import LogoFloatingMullob from "../src/logo_floating.png";
 import Image from "next/image";
 
 const Hero = () => {
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           <div className="relative aspect-square w-full overflow-hidden rounded-lg lg:aspect-[4/3]">
             <Image
-              src={LogoMullob}
+              src={LogoFloatingMullob}
               alt="Mullob Store Logo"
               fill
               className="object-contain"

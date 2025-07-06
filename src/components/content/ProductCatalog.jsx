@@ -10,61 +10,62 @@ import Jahe from "../src/jahe.jpg";
 import Kelor from "../src/kelor.jpg";
 import Kopi from "../src/kopi.jpeg";
 import Susu from "../src/milk.jpg";
+import Jagung from "../src/jagung.jpg";
 
 const products = [
   {
     id: 1,
     name: "Briket Arang",
-    category: "Organic Fuel",
+    category: "Others",
     price: "Rp 77.000",
     image: BriketArang,
   },
   {
     id: 2,
     name: "Coconut",
-    category: "Organic Vegetables",
+    category: "Vegetables and Fruits",
     price: "Rp 45.000",
     image: Coconut,
   },
   {
     id: 3,
     name: "Gula Jawa",
-    category: "Organic Sweetener",
+    category: "Vegetables and Fruits",
     price: "Rp 35.000",
     image: GulaJawa,
   },
   {
     id: 4,
     name: "Ikan Segar",
-    category: "Fresh Fish",
+    category: "Others",
     price: "Rp 85.000",
     image: Ikan,
   },
   {
     id: 5,
     name: "Jahe",
-    category: "Organic Spices",
+    category: "Spices",
     price: "Rp 25.000",
     image: Jahe,
   },
   {
     id: 6,
-    name: "Kelor",
-    category: "Organic Vegetables",
+    name: "Jagung",
+    category: "Grain and Cereals",
     price: "Rp 30.000",
     image: Kelor,
   },
   {
     id: 7,
     name: "Kopi",
-    category: "Organic Coffee",
+    category: "Grain and Cereals",
     price: "Rp 95.000",
     image: Kopi,
   },
   {
     id: 8,
-    name: "Susu Segar",
-    category: "Fresh Dairy",
+    name: "Santan",
+    category: "Vegetables and Fruits",
     price: "Rp 55.000",
     image: Susu,
   },
@@ -97,7 +98,7 @@ export default function ProductCatalog() {
                 <p className="text-sm text-muted-foreground">
                   {product.category}
                 </p>
-                <p className="font-medium mt-2">{product.price}</p>
+                {/* <p className="font-medium mt-2">{product.price}</p> */}
               </div>
             </CardContent>
           </Card>

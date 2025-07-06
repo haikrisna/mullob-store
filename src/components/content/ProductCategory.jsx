@@ -5,15 +5,16 @@ import Image from "next/image"
 import DaryProducts from "../src/dairyproducts.jpg"
 import GrainNCereals from "../src/graincereals.jpg"
 import OrganicVegetable from "../src/organicvegetable.jpg"
+import Rempah from "../src/rempah.jpg";
 
 const categories = [
   {
-    title: "Organic Vegetables",
+    title: "Vegetables and Fruits",
     image: OrganicVegetable,
   },
   {
-    title: "Dairy Products",
-    image: DaryProducts,
+    title: "Spice",
+    image: Rempah,
   },
   {
     title: "Grain and Cereals",
@@ -35,7 +36,7 @@ export default function ProductCategory() {
               key={index}
               className="rounded-3xl shadow-md transition-transform duration-300 hover:scale-105 hover:-translate-y-1"
             >
-              <CardContent className="flex flex-col items-center justify-center pt-1 pb-6">
+              <CardContent className="flex flex-col items-center justify-center pt-1 pb-2">
                 <div className="w-full aspect-[3/4] rounded-2xl bg-gray-200 border overflow-hidden relative">
                   <Image
                     src={item.image || "/placeholder.svg"}

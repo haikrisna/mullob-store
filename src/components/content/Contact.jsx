@@ -5,22 +5,36 @@ import {
   TiktokLogoIcon,
   WhatsappLogoIcon,
 } from "@phosphor-icons/react";
-// tst deploy
+
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+
 
 export default function ContactWithMap() {
   const socialMedia = [
     {
-      name: "TikTok",
+      name: "yusufsjb_",
       icon: TiktokLogoIcon,
       url: "https://www.tiktok.com/@yusufsjb_?lang=en",
     },
     {
-      name: "Instagram",
+      name: "yusufarsjb",
       icon: InstagramLogoIcon,
       url: "https://www.instagram.com/yusufarsjb/",
     },
     {
-      name: "WhatsApp",
+      name: "628812925308",
       icon: WhatsappLogoIcon,
       url: "https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0",
     },
@@ -33,7 +47,7 @@ export default function ContactWithMap() {
         <div className="relative h-96 overflow-hidden">
           {/* Google Maps Embed */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521842!2d106.84513731476!3d-6.208763995493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e7eaae!2sMonas%2C%20Gambir%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sen!2sid!4v1699000000000!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4319.310958483534!2d109.02400377542207!3d-7.705541976325386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6512c8b3702517%3A0x694f0c43e40bfab1!2sJl.%20Madura%2C%20Cigobang%2C%20Gunungsimping%2C%20Kec.%20Cilacap%20Tengah%2C%20Kabupaten%20Cilacap%2C%20Jawa%20Tengah%2053211!5e1!3m2!1sen!2sid!4v1751818285469!5m2!1sen!2sid"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -50,7 +64,7 @@ export default function ContactWithMap() {
             {/* Header */}
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-800 mb-2">
-                LET'S TALK
+                Let's Talk
               </h2>
             </div>
 
@@ -76,15 +90,15 @@ export default function ContactWithMap() {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="w-5 h-5 text-gray-500" />
-                    <span>+62 21 1234 5678</span>
+                    <span>+62-881-292-5308</span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Mail className="w-5 h-5 text-gray-500" />
-                    <span>hello@mullob.co.id</span>
+                    <span>yusufarhxzy@gmail.com</span>
                   </p>
                   <p className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-gray-500" />
-                    <span>Mon - Sat: 8:00 AM - 8:00 PM</span>
+                    <span>Open 24 Hours</span>
                   </p>
                 </div>
               </div>
