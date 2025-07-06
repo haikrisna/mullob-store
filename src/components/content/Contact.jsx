@@ -12,17 +12,17 @@ export default function ContactWithMap() {
     {
       name: "TikTok",
       icon: TiktokLogoIcon,
-      url: "#",
+      url: "https://www.tiktok.com/@yusufsjb_?lang=en",
     },
     {
       name: "Instagram",
       icon: InstagramLogoIcon,
-      url: "#",
+      url: "https://www.instagram.com/yusufarsjb/",
     },
     {
       name: "WhatsApp",
       icon: WhatsappLogoIcon,
-      url: "#",
+      url: "https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0",
     },
   ];
 

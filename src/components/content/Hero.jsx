@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/container";
 import { CertificateIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import LogoMullob from "../src/mullob_logo.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -31,11 +33,16 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <img
-            src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png"
-            alt="placeholder hero"
-            className="h-full w-full object-cover"
-          />
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg lg:aspect-[4/3]">
+            <Image
+              src={LogoMullob}
+              alt="Mullob Store Logo"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </div>
         </div>
       </Container>
     </section>

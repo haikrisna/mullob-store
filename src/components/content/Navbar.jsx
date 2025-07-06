@@ -1,6 +1,7 @@
 "use client";
 
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
+import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +17,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import LogoFloatingMullob from "../src/logo_floating.png";
 import {
   Sheet,
   SheetContent,
@@ -23,12 +25,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState } from "react";
 
 const Navbar = ({
   logo = {
-    url: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
-    src: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
+    url: "#",
+    src: LogoFloatingMullob,
     alt: "logo",
     title: "MullobStore.com",
   },
@@ -105,7 +106,10 @@ const Navbar = ({
     },
   ],
   auth = {
-    signup: { title: "Contact Now", url: "https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0#" },
+    signup: {
+      title: "Contact Now",
+      url: "https://api.whatsapp.com/send/?phone=628812925308&text&type=phone_number&app_absent=0#",
+    },
   },
 }) => {
   return (
@@ -116,7 +120,15 @@ const Navbar = ({
           <div className="flex items-center gap-6">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="max-h-8" alt={logo.alt} />
+              <div className="relative h-8 w-8">
+                <Image
+                  src={logo.src || "/placeholder.svg"}
+                  alt={logo.alt}
+                  fill
+                  className="object-contain w-4 h-4"
+                  sizes="32px"
+                />
+              </div>
               <span className="text-lg font-semibold tracking-tighter">
                 {logo.title}
               </span>
@@ -141,7 +153,18 @@ const Navbar = ({
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="max-h-8" alt={logo.alt} />
+              <div className="relative h-8 w-8">
+                <Image
+                  src={logo.src || "/placeholder.svg"}
+                  alt={logo.alt}
+                  fill
+                  className="object-contain"
+                  sizes="32px"
+                />
+              </div>
+              <span className="text-lg font-semibold tracking-tighter">
+                {logo.title}
+              </span>
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -153,7 +176,18 @@ const Navbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="max-h-8" alt={logo.alt} />
+                      <div className="relative h-8 w-8">
+                        <Image
+                          src={logo.src || "/placeholder.svg"}
+                          alt={logo.alt}
+                          fill
+                          className="object-contain"
+                          sizes="32px"
+                        />
+                      </div>
+                      <span className="text-lg font-semibold tracking-tighter">
+                        {logo.title}
+                      </span>
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -165,7 +199,6 @@ const Navbar = ({
                   >
                     {menu.map((item) => renderMobileMenuItem(item))}
                   </Accordion>
-
                   <div className="flex flex-col gap-3">
                     <Button asChild>
                       <a href={auth.signup.url}>{auth.signup.title}</a>
@@ -196,7 +229,6 @@ const renderMenuItem = (item) => {
       </NavigationMenuItem>
     );
   }
-
   return (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
@@ -224,7 +256,6 @@ const renderMobileMenuItem = (item) => {
       </AccordionItem>
     );
   }
-
   return (
     <a key={item.title} href={item.url} className="text-md font-semibold">
       {item.title}

@@ -1,15 +1,15 @@
-"use client"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
-import BriketArang from "../src/briket_arang.jpeg"
-import Coconut from "../src/coconut.jpeg"
-import GulaJawa from "../src/gula_jawa.jpeg"
-import Ikan from "../src/ikan.jpeg"
-import Jahe from "../src/jahe.jpg"
-import Kelor from "../src/kelor.jpg"
-import Kopi from "../src/kopi.jpeg"
-import Susu from "../src/milk.jpg"
+"use client";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import BriketArang from "../src/briket_arang.jpeg";
+import Coconut from "../src/coconut.jpeg";
+import GulaJawa from "../src/gula_jawa.jpeg";
+import Ikan from "../src/ikan.jpeg";
+import Jahe from "../src/jahe.jpg";
+import Kelor from "../src/kelor.jpg";
+import Kopi from "../src/kopi.jpeg";
+import Susu from "../src/milk.jpg";
 
 const products = [
   {
@@ -68,7 +68,7 @@ const products = [
     price: "Rp 55.000",
     image: Susu,
   },
-]
+];
 
 export default function ProductCatalog() {
   return (
@@ -94,7 +94,9 @@ export default function ProductCatalog() {
               {/* Content bawah */}
               <div className="p-4 text-left">
                 <p className="font-semibold">{product.name}</p>
-                <p className="text-sm text-muted-foreground">{product.category}</p>
+                <p className="text-sm text-muted-foreground">
+                  {product.category}
+                </p>
                 <p className="font-medium mt-2">{product.price}</p>
               </div>
             </CardContent>
@@ -105,11 +107,14 @@ export default function ProductCatalog() {
       <div className="mt-12 flex flex-col items-end max-w-6xl mx-auto px-4">
         <div className=" flex items-center gap-2">
           {/* <p className="text-muted-foreground px-4">Eksplore produk lainnya</p> */}
-          <Button variant="outline" className="rounded-full  hover:bg-green-200 bg-transparent">
+          <Button
+            variant="outline"
+            className="rounded-full  hover:bg-green-200 bg-transparent"
+          >
             Lihat selengkapnya →
           </Button>
         </div>
       </div>
     </section>
-  )
+  );
 }
