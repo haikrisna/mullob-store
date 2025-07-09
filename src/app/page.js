@@ -9,7 +9,7 @@ import CompanyStats from "@/components/content/CompanyStats";
 import CardDemo from "@/components/content/CardSection";
 import CircularStats from "@/components/content/NewCompanyStats";
 import { Footer2 } from "@/components/content/FooterComponent";
-import ContactWithMap from "@/components/content/contact";
+import ContactWithMap from "@/components/content/Contact";
 
 export default function Home() {
   return (
