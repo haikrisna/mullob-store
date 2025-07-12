@@ -5,7 +5,6 @@ import Image from "next/image";
 import BriketArang from "../src/briket_arang.jpeg";
 import Coconut from "../src/coconut.jpeg";
 import GulaJawa from "../src/gula_jawa.jpeg";
-import Ikan from "../src/ikan.jpeg";
 import Jahe from "../src/jahe.jpg";
 import Kelor from "../src/kelor.jpg";
 import Kopi from "../src/kopi.jpeg";
@@ -35,13 +34,6 @@ const products = [
     image: GulaJawa,
   },
   {
-    id: 4,
-    name: "Ikan Segar",
-    category: "Others",
-    price: "Rp 85.000",
-    image: Ikan,
-  },
-  {
     id: 5,
     name: "Jahe",
     category: "Spices",
@@ -53,7 +45,7 @@ const products = [
     name: "Jagung",
     category: "Grain and Cereals",
     price: "Rp 30.000",
-    image: Kelor,
+    image: Jagung,
   },
   {
     id: 7,

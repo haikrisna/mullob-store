@@ -4,7 +4,7 @@ const Footer2 = ({
   logo = {
     src: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
     alt: "Mullob Logo",
-    title: "Mullob.com",
+    title: "Mullob Store",
     url: "https://mir-s3-cdn-cf.behance.net/projects/max_808/a6bb4659057797.Y3JvcCw0NzksMzc1LDMxNSw1OTE.png",
   },
   tagline = "Product made easy.",
@@ -48,7 +48,7 @@ const Footer2 = ({
       ],
     },
   ],
-  copyright = "© 2025 Mullob.com. All rights reserved.",
+  copyright = "© 2025 Mullob All rights reserved.",
   bottomLinks = [
     { text: "Terms and Conditions", url: "#" },
     { text: "Privacy Policy", url: "#" },

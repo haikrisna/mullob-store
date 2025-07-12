@@ -12,8 +12,10 @@ const Background = () => {
                 Background Company
               </h1>
               <h1>
-                Mullob Store Background company about mullo store is lorem ipsum
-                dolor sit amet, consectetur adipiscing elit.
+                Mullob Store began as a small home-based business with a passion
+                for quality local produce. Over time, it has grown into a
+                trusted food supplier, providing vegetables, fruits, spices, and
+                grains to both local and international markets.
               </h1>
             </div>
           </div>
