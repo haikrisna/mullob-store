@@ -62,9 +62,6 @@ const Footer2 = ({
             {/* Logo Section */}
             <div className="col-span-1 lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start gap-2">
-                <a href={logo.url}>
-                  <img src={logo.src || "/placeholder.svg"} alt={logo.alt} title={logo.title} className="h-10" />
-                </a>
                 <p className="text-xl font-semibold">{logo.title}</p>
               </div>
               <p className="mt-4 font-bold">{tagline}</p>

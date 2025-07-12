@@ -31,7 +31,7 @@ const Navbar = ({
     url: "#",
     src: LogoFloatingMullob,
     alt: "logo",
-    title: "MullobStore.com",
+    title: "MullobStore",
   },
   menu = [
     { title: "Home", url: "#" },

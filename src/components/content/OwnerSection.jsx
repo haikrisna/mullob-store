@@ -13,8 +13,6 @@ const OwnerSection = ({
                                                         Thank you for supporting Mullob Store.`,
     signature: "Mullob Store",
     experience: "Serving wholeheartedly",
-    achievement:
-      "Outstanding student of Brawijaya University who built a business",
   },
 }) => {
   return (
@@ -117,12 +115,6 @@ const OwnerSection = ({
                         {owner.experience}
                       </div>
                       <div className="text-sm text-gray-600">Experience</div>
-                    </div>
-                    <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
-                      <div className="text-2xl font-bold text-blue-700 mb-1">
-                        {owner.achievement}
-                      </div>
-                      <div className="text-sm text-gray-600">Achievement</div>
                     </div>
                   </div>
                 </div>
