@@ -15,11 +15,11 @@ const DescriptionSection = () => {
               Mullob Store
             </h2>
             <p className="max-w-xl text-muted-foreground text-lg leading-relaxed mx-auto lg:mx-0 font-handwriting">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              pellentesque sodales eros, id aliquam augue laoreet vel.
-              Suspendisse posuere tempus aliquet. Morbi vulputate vitae enim
-              eget sagittis. Curabitur nunc leo, pharetra ac consectetur sed,
-              luctus ac arcu.
+              At Mullob Store, we believe in the power of natural produce. From
+              the richness of Indonesian soil, we harvest and deliver
+              vegetables, fruits, spices, and grains to customers around the
+              world. With a focus on sustainability and trust, we connect
+              farmers to global opportunities.
             </p>
           </div>
 

@@ -116,7 +116,8 @@ export default function ContactWithMap() {
                 {/* Follow us text */}
                 <div className="mt-6">
                   <p className="text-gray-600 text-sm">
-                    Follow us untuk update produk terbaru dan tips hidup sehat!
+                    Follow us for the latest product updates and healthy living
+                    tips!
                   </p>
                 </div>
               </div>
@@ -127,7 +128,8 @@ export default function ContactWithMap() {
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-green-100 rounded-full">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-sm text-green-700 font-medium">
-                  Kunjungi toko kami atau hubungi untuk konsultasi gratis
+                  Come visit us or get in touch for a complimentary
+                  consultation.
                 </span>
               </div>
             </div>

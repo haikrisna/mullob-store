@@ -28,10 +28,12 @@ const Background = () => {
               <h1 className="text-4xl font-extrabold text-black mb-2">
                 Vision
               </h1>
-              <h1>
-                Mullob Store Background company about mullo store is lorem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </h1>
+              <p>
+                To become a globally trusted provider of high-quality
+                agricultural products from Indonesia, empowering local farmers
+                while promoting sustainable and ethical trade practices
+                worldwide.
+              </p>
             </div>
           </div>
 
@@ -40,10 +42,13 @@ const Background = () => {
               <h1 className="text-4xl font-extrabold text-black mb-2">
                 Mission
               </h1>
-              <h1>
-                Mullob Store Background company about mullo store is lorem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </h1>
+              <p>
+                Our mission is to supply premium vegetables, fruits, spices, and
+                grains to global and local markets by empowering Indonesian
+                farmers, ensuring consistent quality, and upholding sustainable
+                agricultural practices that benefit communities and the
+                environment.
+              </p>
             </div>
           </div>
         </div>
