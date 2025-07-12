@@ -1,5 +1,4 @@
-"use client";
-import { Container } from "../layout/container";
+"use client"
 
 const Footer2 = ({
   logo = {
@@ -60,31 +59,28 @@ const Footer2 = ({
       <div className="container mx-auto px-4">
         <footer>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-6">
-            <div className="col-span-2 text-center lg:text-left">
+            {/* Logo Section */}
+            <div className="col-span-1 lg:col-span-2 flex flex-col items-center lg:items-start text-center lg:text-left">
               <div className="flex flex-col items-center lg:items-start gap-2">
                 <a href={logo.url}>
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    title={logo.title}
-                    className="h-10"
-                  />
+                  <img src={logo.src || "/placeholder.svg"} alt={logo.alt} title={logo.title} className="h-10" />
                 </a>
                 <p className="text-xl font-semibold">{logo.title}</p>
               </div>
               <p className="mt-4 font-bold">{tagline}</p>
             </div>
 
+            {/* Menu Sections */}
             {menuItems.map((section, idx) => (
-              <div key={idx} className="text-center lg:text-left">
+              <div
+                key={idx}
+                className="col-span-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full"
+              >
                 <h3 className="mb-4 font-bold">{section.title}</h3>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground w-full flex flex-col items-center lg:items-start">
                   {section.links.map((link, linkIdx) => (
-                    <li key={linkIdx}>
-                      <a
-                        href={link.url}
-                        className="hover:text-primary font-medium transition-colors"
-                      >
+                    <li key={linkIdx} className="w-full text-center lg:text-left">
+                      <a href={link.url} className="hover:text-primary font-medium transition-colors inline-block">
                         {link.text}
                       </a>
                     </li>
@@ -94,15 +90,13 @@ const Footer2 = ({
             ))}
           </div>
 
+          {/* Bottom Section */}
           <div className="mt-24 flex flex-col items-center justify-between gap-4 border-t pt-8 text-sm text-muted-foreground md:flex-row">
-            <p>{copyright}</p>
+            <p className="text-center md:text-left">{copyright}</p>
             <ul className="flex gap-4 flex-wrap justify-center">
               {bottomLinks.map((link, idx) => (
                 <li key={idx}>
-                  <a
-                    href={link.url}
-                    className="underline hover:text-primary transition-colors"
-                  >
+                  <a href={link.url} className="underline hover:text-primary transition-colors">
                     {link.text}
                   </a>
                 </li>
@@ -112,7 +106,7 @@ const Footer2 = ({
         </footer>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export { Footer2 };
+export { Footer2 }
