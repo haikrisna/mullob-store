@@ -10,7 +10,7 @@ const DescriptionSection = () => {
   return (
     <section className="py-20">
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="grid items-center gap-10 lg:grid-cols-2 pt-32">
           {/* Image Section - pindah ke atas */}
           <div className="flex flex-col items-center justify-center w-full h-full relative gap-8">
             {/* Video 1 */}
