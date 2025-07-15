@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
 import { Container } from "@/components/layout/container";
 import { useState } from "react";
-import UcupAngkat from "../src/ucupangkat.png";
 
 const DescriptionSection = () => {
   const [hoveredVideoId, setHoveredVideoId] = useState();
