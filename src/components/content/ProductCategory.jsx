@@ -28,7 +28,7 @@ export default function ProductCategory() {
       <Container>
         <h2 className="text-4xl font-bold font-handwriting mb-2">Agricultural Product Range</h2>
         <p className="text-muted-foreground mb-12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ipsum dolor sit
+          We provide a wide variety of fresh, natural food ingredients for processing.
         </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-4">
           {categories.map((item, index) => (
