@@ -1,26 +1,60 @@
 "use client";
-import Image from "next/image";
 import { Container } from "@/components/layout/container";
-import UcupAngkat from "../src/ucupangkat.png";
+import { useState } from "react";
 
 const DescriptionSection = () => {
+  const [hoveredVideoId, setHoveredVideoId] = useState();
+
   return (
     <section className="py-20">
       <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-2">
+        <div className="grid items-center gap-10 lg:grid-cols-2 pt-32">
           {/* Image Section - pindah ke atas */}
-          <div className="flex justify-center lg:justify-start">
-            <div className="relative">
-              <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-2xl">
-                <Image
-                  src={UcupAngkat || "/placeholder.svg"}
-                  alt="Ucup Angkat - Mullob Store"
-                  fill
-                  className="object-contain p-4"
-                  sizes="(max-width: 768px) 320px, 384px"
-                  priority
-                />
-              </div>
+          <div className="flex flex-col items-center justify-center w-full h-full relative gap-8">
+            {/* Video 1 */}
+            <div
+              className={`relative w-full max-w-md aspect-video overflow-hidden rounded-lg shadow-xl
+                transition-all duration-300 ease-in-out transform
+                ${hoveredVideoId === "video1" ? "z-20 scale-105" : "z-10"}
+              `}
+              onMouseEnter={() => setHoveredVideoId("video1")}
+              onMouseLeave={() => setHoveredVideoId(null)}
+            >
+              <video
+                className="w-full h-full object-cover pointer-events-none"
+                autoPlay
+                muted
+                loop
+                playsInline
+                onContextMenu={(e) => e.preventDefault()}
+                src="introduce1edit.mp4"
+                aria-label="Video showcase 1: Company overview"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            {/* Video 2 */}
+            <div
+              className={`relative w-full max-w-md aspect-video overflow-hidden rounded-lg shadow-xl
+                lg:-mt-16 lg:ml-16 /* Efek bersilangan hanya di desktop */
+                transition-all duration-300 ease-in-out transform
+                ${hoveredVideoId === "video2" ? "z-20 scale-105" : "z-10"}
+              `}
+              onMouseEnter={() => setHoveredVideoId("video2")}
+              onMouseLeave={() => setHoveredVideoId(null)}
+            >
+              <video
+                className="w-full h-full object-cover pointer-events-none"
+                autoPlay
+                muted
+                loop
+                playsInline
+                onContextMenu={(e) => e.preventDefault()}
+                src="introduce2edit.mp4"
+                aria-label="Video showcase 2: Product highlights"
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
 
