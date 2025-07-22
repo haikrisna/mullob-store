@@ -75,15 +75,25 @@ export default function ContactWithMap() {
                   </p>
                   <p className="flex items-center gap-2">
                     <Phone className="w-5 h-5 text-gray-500" />
-                    <span>+62-881-292-5308</span>
+                    <a
+                      href="tel:+628812925308"
+                      className="hover:underline text-black"
+                    >
+                      +62-881-292-5308
+                    </a>
                   </p>
                   <p className="flex items-center gap-2">
                     <Mail className="w-5 h-5 text-gray-500" />
-                    <span>yusufarhxzy@gmail.com</span>
+                    <a
+                      href="mailto:admin@mullobstore.my.id"
+                      className="hover:underline text-black"
+                    >
+                      admin@mullobstore.my.id
+                    </a>
                   </p>
                   <p className="flex items-center gap-2">
                     <Clock className="w-5 h-5 text-gray-500" />
-                    <span>Open 24 Hours</span>
+                    Open 24 Hours
                   </p>
                 </div>
               </div>
