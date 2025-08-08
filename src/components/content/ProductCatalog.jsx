@@ -11,55 +11,88 @@ import Kopi from "../src/kopi.jpeg";
 import Susu from "../src/milk.jpg";
 import Jagung from "../src/jagung.jpg";
 
+// Update produk
+import Beras from "../src/beras_update.jpg";
+import JaheBaru from "../src/jahe_update.jpg"; //kunyit
+import Singkong from "../src/singkong_update.jpg";
+
 const products = [
   {
     id: 1,
-    name: "Briket Arang",
-    category: "Others",
-    price: "Rp 77.000",
-    image: BriketArang,
-  },
-  {
-    id: 2,
     name: "Coconut",
     category: "Vegetables and Fruits",
     price: "Rp 45.000",
     image: Coconut,
   },
   {
-    id: 3,
-    name: "Gula Jawa",
+    id: 2,
+    name: "Coconut Milk",
     category: "Vegetables and Fruits",
-    price: "Rp 35.000",
-    image: GulaJawa,
+    price: "Rp 55.000",
+    image: Susu,
   },
   {
-    id: 5,
-    name: "Jahe",
+    id: 3,
+    name: "Ginger",
     category: "Spices",
     price: "Rp 25.000",
     image: Jahe,
   },
   {
+    id: 4,
+    name: "Turmeric",
+    category: "Spices",
+    price: "Rp 55.000",
+    image: JaheBaru,
+  },
+  {
+    id: 5,
+    name: "Cassava",
+    category: "Vegetables and Fruits",
+    price: "Rp 55.000",
+    image: Singkong,
+  },
+  {
     id: 6,
-    name: "Jagung",
+    name: "Corn",
     category: "Grain and Cereals",
     price: "Rp 30.000",
     image: Jagung,
   },
   {
     id: 7,
-    name: "Kopi",
+    name: "Rice",
+    category: "Grain and Cereals",
+    price: "Rp 55.000",
+    image: Beras,
+  },
+  {
+    id: 8,
+    name: "Coffee Bean",
     category: "Grain and Cereals",
     price: "Rp 95.000",
     image: Kopi,
   },
   {
-    id: 8,
-    name: "Santan",
-    category: "Vegetables and Fruits",
+    id: 9,
+    name: "Moringa Leaves",
+    category: "Spices",
     price: "Rp 55.000",
-    image: Susu,
+    image: Kelor,
+  },
+  {
+    id: 10,
+    name: "Palm Sugar",
+    category: "Vegetables and Fruits",
+    price: "Rp 35.000",
+    image: GulaJawa,
+  },
+  {
+    id: 11,
+    name: "Charcoal Briquette",
+    category: "Others",
+    price: "Rp 77.000",
+    image: BriketArang,
   },
 ];
 
